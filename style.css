@@ -236,7 +236,6 @@ body {
 #alphabet {
   margin-top: 5vw;
   height: 12vh;
-  width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -246,6 +245,9 @@ body {
   border-top: 2px solid #000;
   border-bottom: 2px solid #000;
   margin-bottom: 5vw;
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
 }
 
 #alphabet h3 {
@@ -710,6 +712,7 @@ body {
 ::-webkit-scrollbar {
   background-color: transparent;
   width: 6px;
+  height: 1px;
 }
 
 ::-webkit-scrollbar-thumb {
