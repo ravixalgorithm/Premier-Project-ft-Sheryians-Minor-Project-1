@@ -42,25 +42,25 @@ body {
   position: relative;
 }
 
-#nav h1::before{
-    content: "model management";
-    font-family: 'work sans';
-    font-weight: 400;
-    font-size: 18px;
-    position: absolute;
-    bottom: 15%;
-    right: 20%;
-    letter-spacing: 0.1px;
+#nav h1::before {
+  content: "model management";
+  font-family: "work sans";
+  font-weight: 400;
+  font-size: 18px;
+  position: absolute;
+  bottom: 15%;
+  right: 20%;
+  letter-spacing: 0.1px;
 }
 
-#nav h1::after{
-    content: "©️";
-    font-family: 'work sans';
-    font-weight: 400;
-    font-size: 20px;
-    position: absolute;
-    top: 18%;
-    right: 18%;
+#nav h1::after {
+  content: "©️";
+  font-family: "work sans";
+  font-weight: 400;
+  font-size: 20px;
+  position: absolute;
+  top: 18%;
+  right: 18%;
 }
 
 #nav h2 {
@@ -88,7 +88,7 @@ body {
   cursor: pointer;
 }
 
-#nav h2:nth-last-child(1):hover{
+#nav h2:nth-last-child(1):hover {
   text-decoration: none;
   color: #8b8a8a;
 }
@@ -660,53 +660,266 @@ body {
   word-spacing: 1px;
 }
 
-#marquee{
-    margin-top: 3vw;
-    width: 100%;
-    white-space: nowrap;
-    overflow-y: hidden;
-    overflow-x: hidden;
-    padding: 1vw;
-    border-top: 2px solid #000;
-    border-bottom: 2px solid #000;
+#marquee {
+  margin-top: 2vw;
+  width: 100%;
+  white-space: nowrap;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  padding: 1vw;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
 }
 
-#marquee h1{
-    display: inline-block;
-    font-size: 3vw;
-    text-transform: uppercase;
-    font-weight: 900;
-    -webkit-text-stroke: 2px #000;
-    color: transparent;
-    letter-spacing: 2px;
-    font-family: 'monument';
-    margin-right: 16px;
-    animation-name: marquee;
-    animation-duration: 2s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
+#marquee h1 {
+  display: inline-block;
+  font-size: 3.5vw;
+  text-transform: uppercase;
+  font-weight: 400;
+  -webkit-text-stroke: 2px #000;
+  color: transparent;
+  letter-spacing: 5px;
+  font-family: "monument";
+  margin-right: 16px;
+  animation-name: marquee;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
 }
 
 @keyframes marquee {
-    from{
-        transform: translateX(0);
-        -webkit-transform: translateX(0);
-        -moz-transform: translateX(0);
-        -ms-transform: translateX(0);
-        -o-transform: translateX(0);
-    }
-    to{
-        transform: translateX(calc(-100% - 20px));
-        -webkit-transform: translateX(calc(-100% - 20px));
-        -moz-transform: translateX(calc(-100% - 20px));
-        -ms-transform: translateX(calc(-100% - 20px));
-        -o-transform: translateX(calc(-100% - 20px));
-    }
+  from {
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% - 20px));
+    -webkit-transform: translateX(calc(-100% - 20px));
+    -moz-transform: translateX(calc(-100% - 20px));
+    -ms-transform: translateX(calc(-100% - 20px));
+    -o-transform: translateX(calc(-100% - 20px));
+  }
 }
 
-#footer{
-    height: 40vh;
-    width: 100%;
+#part6 {
+  height: 105vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 6vw 7vw;
+}
+
+#part6 #left {
+  height: 100%;
+  width: 17%;
+}
+
+#part6 #left h1 {
+  font-family: "monument";
+  font-size: 3vw;
+}
+
+#part6 #middle {
+  height: 100%;
+  width: 35%;
+}
+
+#part6 #middle #content {
+  height: 40%;
+  width: 100%;
+}
+
+#part6 #middle #content p {
+  font-size: 2vw;
+  width: 100%;
+  height: 100%;
+  font-family: "work sans";
+  line-height: 2vw;
+}
+
+#part6 #middle #img {
+  height: 60%;
+  width: 100%;
+}
+
+#part6 #middle #img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+#part6 #right {
+  height: 100%;
+  width: 41%;
+}
+
+#part6 #right #content {
+  height: 40%;
+  width: 100%;
+}
+
+#part6 #right #content p {
+  font-size: 2vw;
+  width: 100%;
+  height: 100%;
+  font-family: "work sans";
+  line-height: 2vw;
+}
+
+#part6 #right #img {
+  height: 60%;
+  width: 100%;
+}
+
+#part6 #right #img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+#footer {
+  height: 50vh;
+  width: 100%;
+  padding: 2vw 0;
+}
+
+#footer #content {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  border-bottom: 2px solid #000;
+  border-top: 2px solid #000;
+}
+
+#footer #content #logo {
+  height: 40%;
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+#footer #content #logo h1 {
+  font-size: 3.2vw;
+  height: 100%;
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "monument";
+  letter-spacing: -7px;
+}
+
+#footer #content #logo h1::before {
+  content: "model management";
+  font-family: "work sans";
+  font-weight: 400;
+  font-size: 18px;
+  position: absolute;
+  bottom: 20%;
+  right: 20%;
+  letter-spacing: 0.1px;
+}
+
+#footer #content #logo h1::after {
+  content: "©️";
+  font-family: "work sans";
+  font-weight: 400;
+  font-size: 20px;
+  position: absolute;
+  top: 20%;
+  right: 18%;
+}
+
+#footer #content #link1 {
+  height: 100%;
+  width: 15%;
+  border-right: 2px solid #000;
+}
+
+#footer #content #link1 #content-link1 {
+  height: 40%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#footer #content #link1 h2 {
+  font-size: 1.3vw;
+  font-weight: 700;
+}
+
+#footer #content #link2 {
+  height: 100%;
+  width: 20%;
+  border-right: 2px solid #000;
+}
+#footer #content #link2 #content-link2 {
+  height: 40%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#footer #content #link2 h2 {
+  font-size: 1.3vw;
+  font-weight: 700;
+}
+
+#footer #content #link3 {
+  height: 100%;
+  width: 40%;
+  border-right: 2px solid #000;
+}
+
+#footer #content #link3 h2 {
+  font-size: 1.3vw;
+  font-weight: 700;
+}
+
+#footer #content h2:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+#footer #content #link3 #top {
+  width: 100%;
+  height: 40%;
+  border-bottom: 2px solid #000;
+  padding: 0vh 10vh;
+  display: flex;
+  align-items: center;
+}
+
+#footer #content #link3 #bottom {
+  width: 100%;
+  height: 60%;
+}
+
+#footer #content #link3 #bottom #socials {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  align-items: center;
+  padding: 0 10vh;
+}
+
+#footer #content #link3 #bottom #socials i {
+  font-size: 1.5vw;
+  margin-right: 1.5vw;
+}
+
+#footer #content #link3 #bottom #copyright {
+  width: 100%;
+  height: 60%;
+  padding: 0 10vh;
 }
 
 ::-webkit-scrollbar {
