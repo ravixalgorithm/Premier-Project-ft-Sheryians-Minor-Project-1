@@ -916,6 +916,11 @@ body {
   margin-right: 1.5vw;
 }
 
+#footer #content #link3 #bottom #copyright p{
+  font-size: 1vw;
+  font-family: 'work sans';
+}
+
 #footer #content #link3 #bottom #copyright {
   width: 100%;
   height: 60%;
